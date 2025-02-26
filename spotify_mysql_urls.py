@@ -22,7 +22,7 @@ connection = mysql.connector.connect(**db_config)
 cursor = connection.cursor()
 
 # Read track URLs from file
-file_path = "spacify artists.txt"
+file_path = "spotify artists.txt"
 with open(file_path, 'r') as file:
     artist_urls = file.readlines()
 
